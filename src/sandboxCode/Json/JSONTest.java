@@ -9,14 +9,16 @@ public class JSONTest {
    // TEST FILE FOR BASIC JSON OBJECT
     public static void main(String[] args) {
 
-        JSONObject info = new JSONObject();
+        JSONObject data = new JSONObject();
 
-        info.put("name","Robert");
-        info.put("number","283743");
-        info.put("state","WA");
-        info.put("Occupation","Police Officer");
+        data.put("name","Robert");
+        data.put("number","283743");
+        data.put("state","WA");
+        data.put("Occupation","Police Officer");
 
-        System.out.println(info);
+
+        //Output JSON file
+        System.out.println(data);
 
 
 
