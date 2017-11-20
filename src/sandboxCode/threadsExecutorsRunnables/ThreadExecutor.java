@@ -23,7 +23,7 @@ public class ThreadExecutor implements Runnable {
 
     @Override
     // Thread creation
-    // implemented runnable from Thread Executor
+    // implemented runnable from Thread Executors
     public void run() {
         // Prints name of the current thread
         System.out.println("Current thread = " + Thread.currentThread().getName());

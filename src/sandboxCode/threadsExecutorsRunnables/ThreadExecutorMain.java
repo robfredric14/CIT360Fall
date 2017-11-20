@@ -12,7 +12,7 @@ public class ThreadExecutorMain {
 
 
 
-        //ThreadPoolExecutor implements both ExecutorService and Executors
+        //ThreadPoolExecutor implements both ExecutorService and Executor
         //By using thread pools we simply implement the thread pool to manually create the threads for us.
         //This allows better management and use of threads
         //This will create the pool of threads and we will make it run with a pool size of 15
