@@ -2,9 +2,6 @@ package sandboxCode.threadsExecutorsRunnables;
 
 import java.util.Random;
 
-/**
- * Created by robfredric 2017.
- */
 public class ThreadExecutor implements Runnable {
 
 
@@ -28,8 +25,7 @@ public class ThreadExecutor implements Runnable {
     public void run() {
         // Prints name of the current thread
         System.out.println("Current thread = " + Thread.currentThread().getName());
-        // Shows when a task is being executed concurrently with another thread,
-        // then puts the thread to bed (I like saying that)
+
         try {
             System.out.println("Doing a task during : " + name);
             Thread.currentThread().sleep(time);

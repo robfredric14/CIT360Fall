@@ -6,9 +6,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by robfredric 2017.
- */
 public class ThreadExecutorMain {
 
     public static void main(String[] args) {
@@ -34,19 +31,11 @@ public class ThreadExecutorMain {
 
             //creating an Executor Task named process and giving the thread something to do
             //uses the for loop created above for naming the processes
-            ExecutorTask process = new ExecutorTask("process " + i);
+            ThreadExecutor process = new ThreadExecutor("process " + i);
             System.out.println("New process added: " + process.getName());
             Executor1.execute(process);
         }
 
-
-        //ExecutorService is continued to be used
-        //------------------------------------------------------------------------------------------------
-        //UNHAPPY PATH
-        //if this try and catch is not used, the tasks do not finish before being shut down and will throw an error
-        //that sleep was interrupted
-        //but we know the unfinished tasks output works because it can be seen as well when ran
-        //------------------------------------------------------------------------------------------------
         try {
             // Will shutdown executorService after waiting for all tasks to finish up
             System.out.println("Will try to shutdown ExecutorService after tasks have completed");
