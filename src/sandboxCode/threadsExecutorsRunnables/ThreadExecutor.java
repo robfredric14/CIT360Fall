@@ -2,6 +2,8 @@ package sandboxCode.threadsExecutorsRunnables;
 
 import java.util.Random;
 
+
+//thread example
 public class ThreadExecutor implements Runnable {
 
 
