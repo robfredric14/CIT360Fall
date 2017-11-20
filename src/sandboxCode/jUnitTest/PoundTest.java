@@ -8,7 +8,7 @@ public class PoundTest {
 
     @Test
     public void dogTest() throws Exception {
-        // Create new DogBean objects
+        // Create new Dog objects
         Dog dog1 = new Dog(4, "brown", 10.5, "Husky", "Dogmeat");
         Dog dog2 = new Dog(3, "white", 10.5, "Chiwawa", "Chico");
         Dog dog3 = new Dog(4, "tan", 10.5, "Golden Retriever", "Keeper");
@@ -39,7 +39,7 @@ public class PoundTest {
     @Test
     public void mamTest() throws Exception {
 
-        // Create new MammalBean objects
+        // Create new Mammal objects
         Mammal mam1 = new Mammal(2,"tan",6.0);
         Mammal mam2 = new Mammal(4,"brown",3.5);
         Mammal mam3 = new Mammal(3,"black",4.0);
@@ -91,7 +91,7 @@ public class PoundTest {
     @Test
     public void dogMapTest() {
 
-        // Create new DogBean objects
+        // Create new Dog objects
         Dog dog1 = new Dog(4, "black", 7.5, "Doberman Pinscher", "Charlie");
         Dog dog2 = new Dog(3, "grey", 8.5, "Bulldog", "Spike");
         Dog dog3 = new Dog(2, "white", 9.5, "Poodle", "Fritz");
@@ -102,7 +102,7 @@ public class PoundTest {
         dogMap.put("Spike",dog2);
         dogMap.put("Fritz",dog3);
 
-        // Assert that the correct DogBean objects are in the dogMap
+        // Assert that the correct Dog objects are in the dogMap
         assertTrue(dogMap.containsKey("Charlie"));
         assertTrue(dogMap.containsKey("Spike"));
         assertTrue(dogMap.containsKey("Fritz"));
@@ -110,7 +110,7 @@ public class PoundTest {
         // Remove dog1 and dog2 from the dogMap
         dogMap.remove("Charlie",dog1);
         dogMap.remove("Spike",dog2);
-        // Assert that correct DogBean obects are or aren't in the dogMap
+        // Assert that correct Dog obects are or aren't in the dogMap
         assertFalse(dogMap.containsKey("Charlie"));
         assertFalse(dogMap.containsKey("Spike"));
         assertTrue(dogMap.containsKey("Fritz"));
