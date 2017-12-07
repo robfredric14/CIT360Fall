@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Player" table="PLAYER">
+        <meta attribute="class-description">
+        </meta>
+        <id name="age" type="int" column="Age">
+            <generator class="native"/>
+        </id>
+        <property name="team" column="Team" type="string"/>
+        <property name="name" column="Name" type="string"/>
+        <property name="league" column="League" type="string"/>
+        <property name="number" column="Number" type="int"/>
+    </class>
+</hibernate-mapping>
