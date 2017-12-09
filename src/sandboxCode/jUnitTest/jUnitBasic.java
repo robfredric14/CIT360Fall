@@ -15,7 +15,7 @@ public class jUnitBasic {
 
 
 
-    // Full on assertArrayEquals Test
+    //array for array equals
     basicArray sportsBag = new basicArray();
 
     String[] bag = {"bats", "balls", "shoes"};
