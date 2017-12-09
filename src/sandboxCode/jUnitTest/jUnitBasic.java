@@ -5,7 +5,7 @@ import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
 
 
-// Class called Addition
+
 public class jUnitBasic {
 
     String Test1 = "Sammy Sosa";
